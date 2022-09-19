@@ -392,7 +392,29 @@ footer ul a:hover{
   line-height: 1.7rem;
 }
 
+/* category post styles */
 
+.category_title{
+  height: 15rem;
+  margin-top: 4.5rem;
+  background: var(--color-gray-900);
+  display: grid;
+  place-items: center;
+}
+
+.empty_page{
+  height: 70vh;
+  
+  display: grid;
+  place-content: center;
+}
+
+
+/* other pages styles beginning */
+
+
+
+/* other pages styles ending */
 
 
 
