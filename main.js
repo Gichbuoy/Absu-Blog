@@ -2,6 +2,10 @@ const navItems = document.querySelector('.nav_items');
 const openNavBtn = document.querySelector('#open_nav-btn');
 const closeNavBtn = document.querySelector('#close_nav-btn');
 
+const sidebar = document.querySelector('aside');
+const ShowSidebarBtn = document.querySelector('#show_sidebar-btn');
+const hideSidebarBtn = document.querySelector('#hide_sidebar-btn');
+
 // open the nav 
 const openNav = () => {
   navItems.style.display = 'flex';
@@ -19,3 +23,24 @@ const closeNav = () => {
 
 openNavBtn.addEventListener('click', openNav);
 closeNavBtn.addEventListener('click', closeNav);
+
+
+
+//show sidebar on small devices
+const showSidebar = () => {
+    sidebar.style.left = '0';
+    ShowSidebarBtn.style.display = 'none';
+    hideSidebarBtn.style.display = 'inline-block';
+}
+
+//hides sidebar on small devices
+const hideSidebar = () => {
+    sidebar.style.left = '-100%';
+    ShowSidebarBtn.style.display = 'inline-block';
+    hideSidebarBtn.style.display = 'none';
+}
+
+
+
+ShowSidebarBtn.addEventListener('click', showSidebar);
+hideSidebarBtn.addEventListener('click', hideSidebar);
